@@ -19,15 +19,17 @@ body {
   background-position: center;
   height: 90vh;
   position: relative;
+  padding: 0.1rem;
+}
+.header__wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 80rem;
+  margin: 15rem auto 0;
 }
 .header__info {
-  position: absolute;
-  top: 16.5rem;
-  left: 7.5rem;
   background-color: #60B3D0;
   width: 25rem;
 }
@@ -51,6 +53,27 @@ body {
   margin: 0;
   line-height: 2.5rem;
 }
+.header__heading {
+  margin-left: 5rem;
+}
+.header__heading h1 {
+  color: white;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.header__heading h3 {
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.3rem 1.5rem;
+  margin-top: 2rem;
+}
+
 .info-line {
   height: 0.05rem;
   background-color: white;
@@ -92,9 +115,14 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
+  transition: all 0.2s;
 }
 .info-button:last-child {
   margin-bottom: 2.2rem;
+}
+.info-button:hover {
+  background-color: #9B9B9B;
+  color: white;
 }
 
 .park-health {
@@ -125,6 +153,10 @@ body {
   padding: 0.33rem 1.5rem;
   display: inline-block;
   margin: 1.5rem 0 1.75rem;
+  transition: all 0.2s;
+}
+.park-health__button:hover {
+  background-color: #9B9B9B;
 }
 
 .navigation {
@@ -170,6 +202,10 @@ body {
   font-weight: 600;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  transition: all 0.2s;
+}
+.navigation__listItem a:hover {
+  color: #60B3D0;
 }
 
 .socialMedia__list {

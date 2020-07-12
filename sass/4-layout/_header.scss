@@ -5,12 +5,15 @@
     background-position: center;
     height: 90vh;
     position: relative;
-    @include displayFlex(column, center, center);
+    padding: .1rem;
+
+    &__wrapper {
+        @include displayFlex(row, center, flex-start);
+        width: 80rem;
+        margin: 15rem auto 0;
+    }
 
     &__info {
-        position: absolute;
-        top: 16.5rem;
-        left: 7.5rem;
         background-color: $main-blue;
         width: 25rem;
 
@@ -38,7 +41,28 @@
         }
     }
 
-    &__heading {}
+    &__heading {
+        margin-left: 5rem;
+
+        h1 {
+            color: $white;
+            font-size: 4.5rem; 
+            line-height: 5rem;
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+        }
+
+        h3 {
+            background-color: $white;
+            color: $black;
+            text-align: center;
+            display: inline-block;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            padding: .3rem 1.5rem;
+            margin-top: 2rem;
+        }
+    }
 }
 
 .info {
@@ -82,9 +106,15 @@
         font-size: 1.2rem;
         font-weight: 600;
         text-transform: uppercase;
+        transition: all .2s;
 
         &:last-child {
             margin-bottom: 2.2rem;
+        }
+
+        &:hover {
+            background-color: $main-gray;
+            color: $white;
         }
     }
 }
