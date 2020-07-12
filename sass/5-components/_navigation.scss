@@ -3,11 +3,17 @@
     background-color: purple;
     @include displayFlex(column, flex-end, flex-start);
     background-color: rgba(0,0,0,.8);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
 
     .site-logo {
         position: fixed;
         top: 1.5rem;
         left: 1rem;
+        z-index: 101;
 
         img {
             height: 11rem;

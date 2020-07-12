@@ -1,0 +1,29 @@
+.park-health {
+    background-color: $main-blue;
+    color: darken($white, 3%);
+    @include displayFlex(column, center, flex-start);
+
+    h2 {
+        font-size: 2.33rem;
+        font-weight: 400;
+        margin-top: 3rem;
+    }
+
+    p {
+        font-size: 1.15rem;
+        font-weight: 300;
+        margin-top: .5rem;
+    }
+
+    &__button {
+        background-color: $black;
+        color: darken($white, 5%);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: .33rem 1.5rem;
+        display: inline-block;
+        margin: 1.5rem 0 1.75rem;
+    }
+}

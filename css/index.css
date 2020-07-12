@@ -18,6 +18,113 @@ body {
   background-size: cover;
   background-position: center;
   height: 90vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header__info {
+  position: absolute;
+  top: 16.5rem;
+  left: 7.5rem;
+  background-color: #60B3D0;
+  width: 25rem;
+}
+.header__info-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.header__info h5 {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 1.33rem 0 0;
+  letter-spacing: 0.05rem;
+}
+.header__info h4 {
+  font-size: 2.2rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  line-height: 2.5rem;
+}
+.info-line {
+  height: 0.05rem;
+  background-color: white;
+  width: 100%;
+  margin: 1.5rem 0 0;
+}
+.info__list {
+  list-style: none;
+  margin: 1.7rem 0;
+}
+.info__listItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+.info__listItem img {
+  width: 1.33rem;
+}
+.info__listItem span {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 0.5rem;
+}
+.info-button {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #60B3D0;
+  background-color: white;
+  height: 2.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.info-button:last-child {
+  margin-bottom: 2.2rem;
+}
+
+.park-health {
+  background-color: #60B3D0;
+  color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.park-health h2 {
+  font-size: 2.33rem;
+  font-weight: 400;
+  margin-top: 3rem;
+}
+.park-health p {
+  font-size: 1.15rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+.park-health__button {
+  background-color: black;
+  color: #f2f2f2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.33rem 1.5rem;
+  display: inline-block;
+  margin: 1.5rem 0 1.75rem;
 }
 
 .navigation {
@@ -28,11 +135,17 @@ body {
   align-items: flex-end;
   justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .navigation .site-logo {
   position: fixed;
   top: 1.5rem;
   left: 1rem;
+  z-index: 101;
 }
 .navigation .site-logo img {
   height: 11rem;

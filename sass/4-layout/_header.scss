@@ -4,4 +4,87 @@
     background-size: cover;
     background-position: center;
     height: 90vh;
+    position: relative;
+    @include displayFlex(column, center, center);
+
+    &__info {
+        position: absolute;
+        top: 16.5rem;
+        left: 7.5rem;
+        background-color: $main-blue;
+        width: 25rem;
+
+        &-wrapper {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h5 {
+            font-size: 1.3rem;
+            color: $white;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin: 1.33rem 0 0;
+            letter-spacing: .05rem;
+        }
+
+        h4 {
+            font-size: 2.2rem;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin: 0;
+            line-height: 2.5rem;
+        }
+    }
+
+    &__heading {}
+}
+
+.info {
+    &-line {
+        height: .05rem;
+        background-color: $white;
+        width: 100%;
+        margin: 1.5rem 0 0;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 1.7rem 0;
+    }
+
+    &__listItem {
+        @include displayFlex(row, center, flex-start);
+        margin-bottom: 1rem;
+
+        img {
+            width: 1.33rem;
+        }
+
+        span {
+            color: $white;
+            font-size: 1rem;
+            font-weight: 300;
+            margin-left: .5rem;
+        }
+    }
+
+    &-button {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: $main-blue;
+        background-color: white;
+        height: 2.2rem;
+        @include displayFlex(row, center, center);
+        margin-bottom: .75rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &:last-child {
+            margin-bottom: 2.2rem;
+        }
+    }
 }
