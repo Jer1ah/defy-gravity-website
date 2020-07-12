@@ -1,2 +1,12 @@
 // 1-base folder
 @import "1-base/base";
+
+//2-abstracts
+@import "2-abstracts/variables";
+@import "2-abstracts/mixins";
+
+//4-layout folder
+@import "4-layout/header";
+
+//5-components folder
+@import "5-components/navigation";

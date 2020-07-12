@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Oswald", sans-serif;
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/defy-main-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.navigation {
+  height: 7.7rem;
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navigation .site-logo {
+  position: fixed;
+  top: 1.5rem;
+  left: 1rem;
+}
+.navigation .site-logo img {
+  height: 11rem;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin-top: 2.75rem;
+  margin-right: 1.33rem;
+}
+.navigation__listItem {
+  margin-left: 3rem;
+}
+.navigation__listItem a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.socialMedia__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1.1rem;
+  padding: 0;
+  margin-right: 1.2rem;
+}
+.socialMedia__listItem {
+  margin-left: 1.33rem;
+}
+.socialMedia__listItem img {
+  height: 1.1rem;
+}
+
+/*# sourceMappingURL=index.css.map */
