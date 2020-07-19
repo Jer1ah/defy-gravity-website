@@ -1,0 +1,90 @@
+.tickets {
+    h2 {
+        width: 95rem;
+        max-width: 95%;
+        font-size: 3rem;
+        font-weight: 500;
+        color: $main-gray;
+        text-transform: uppercase;
+        margin: 5rem auto 2rem;
+    }
+
+    &__list {
+        width: 95rem;
+        max-width: 95%;
+        padding: 0;
+        list-style: none;
+        margin: 0 auto 5rem;
+        @include displayFlex(row, flex-start, space-between);
+    }
+
+    &__listItem {
+        width: 22.5%;
+        height: 40rem;
+        text-align: center;
+
+        .top {
+            background-color: lighten($black, 10%);
+            color: $white;
+            padding: .1rem;
+
+            h4 {
+                font-size: 1.75rem;
+                font-weight: 500;
+                margin: 2rem 0 0;
+                opacity: .95;
+            }
+
+            h3 {
+                color: $main-blue;
+                font-size: 5.5rem;
+                margin: .5rem 0;
+                font-weight: 800;
+            }
+
+            span {
+                display: inline-block;
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+                margin-bottom: 2rem;
+                opacity: .95;
+            }
+        }
+
+        .bottom {
+            background-color: $main-blue;
+            height: 22rem;
+            padding: .1rem;
+
+            h5 {
+                font-size: 1.33rem;
+                font-size: 700;
+                color: darken($white, 5%);
+                margin: 1.5rem 0 .5rem;
+            }
+
+            p {
+                color: darken($white, 7%);
+                font-size: 1.1rem;
+                font-size: 300;
+                margin-bottom: .15rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: $black;
+                background-color: $white;
+                font-size: 1.7rem;
+                font-weight: 500;
+                padding: .1rem 2.5rem;
+                display: inline-block;
+                margin-top: 2rem;
+                transition: all .2s;
+
+                &:hover {
+                    background-color: $main-gray;
+                }
+            }
+        }
+    }
+}
