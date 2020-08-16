@@ -240,6 +240,36 @@ body {
   background-color: #888;
 }
 
+.activities h2 {
+  font-size: 2rem;
+}
+.activities__list {
+  width: 85rem;
+  max-width: 85%;
+  margin: 5rem auto;
+  padding: 0;
+  list-style: none;
+}
+.activities__listItem {
+  position: relative;
+}
+.activities__listItem img {
+  width: 55%;
+}
+.activities__listItem-info {
+  position: absolute;
+  top: 3rem;
+  left: 60%;
+}
+.activities__listItem-info h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.activities__listItem-info p {
+  font-size: 1.2rem;
+}
+
 .navigation {
   height: 7.7rem;
   background-color: purple;
