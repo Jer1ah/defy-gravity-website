@@ -27,6 +27,49 @@
         max-width: 95%;
         width: 95rem;
         margin: 0 auto 5rem;
+
+        .one {
+            background: linear-gradient(rgba(60, 155, 183, .6), rgba(60, 155, 183, .6)),
+                        url("../../images/foam-pits.png");
+            background-size: cover;
+            background-position: center;
+            transition: all .3s;
+
+            &:hover {
+                background: linear-gradient(rgba(60, 155, 183, .0), rgba(60, 155, 183, .0)),
+                            url("../../images/foam-pits.png");
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .two {
+            background: linear-gradient(rgba(60, 155, 183, .6), rgba(60, 155, 183, .6)),
+                        url("../../images/dodgeball.png");
+            background-size: cover;
+            background-position: center;
+
+            &:hover {
+                background: linear-gradient(rgba(60, 155, 183, .0), rgba(60, 155, 183, .0)),
+                            url("../../images/dodgeball.png");
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .three {
+            background: linear-gradient(rgba(60, 155, 183, .6), rgba(60, 155, 183, .6)),
+                        url("../../images/ninja-course.png");
+            background-size: cover;
+            background-position: center;
+
+            &:hover {
+                background: linear-gradient(rgba(60, 155, 183, .0), rgba(60, 155, 183, .0)),
+                            url("../../images/ninja-course.png");
+                background-size: cover;
+                background-position: center;
+            }
+        }
     }
 
     &__listItem {
@@ -36,16 +79,8 @@
         transition: all .3s;
         position: relative;
 
-        img {
-            width: 100%;
-            height: 100%;
-            transition: all .3s;
-        }
-
         &:hover {
-            img {
-                transform: scale(1.2);
-            }
+            cursor: pointer;
         }
     }
 
