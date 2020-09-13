@@ -478,9 +478,11 @@ body {
   top: 1.5rem;
   left: 1rem;
   z-index: 101;
+  transition: all 0.22s;
 }
 .navigation .site-logo img {
   height: 11rem;
+  transition: all 0.22s;
 }
 .navigation__list {
   display: flex;
