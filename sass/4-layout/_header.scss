@@ -10,6 +10,7 @@
     &__wrapper {
         @include displayFlex(row, center, flex-start);
         width: 80rem;
+        max-width: 95%;
         margin: 15rem auto 0;
     }
 
@@ -118,3 +119,34 @@
         }
     }
 }
+
+
+// media queries
+@media(max-width: 975px) {
+    .header {
+        height: 70vh;
+
+        &__info {
+            display: none;
+        }
+
+        &__wrapper {
+            justify-content: center;
+        }
+
+        &__heading {
+            margin-left: 0;
+            margin-top: 2rem;
+            text-align: center;
+
+            h1 {
+                font-size: 3rem;
+                line-height: 3.33rem;
+            }
+
+            h3 {
+                margin-top: 1rem;
+            }
+        }
+    }
+} 

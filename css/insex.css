@@ -126,29 +126,6 @@ body {
   color: white;
 }
 
-@media (max-width: 975px) {
-  .header {
-    height: 70vh;
-  }
-  .header__info {
-    display: none;
-  }
-  .header__wrapper {
-    justify-content: center;
-  }
-  .header__heading {
-    margin-left: 0;
-    margin-top: 2rem;
-    text-align: center;
-  }
-  .header__heading h1 {
-    font-size: 3rem;
-    line-height: 3.33rem;
-  }
-  .header__heading h3 {
-    margin-top: 1rem;
-  }
-}
 .park-health {
   background-color: #3C9BB7;
   color: #f7f7f7;
@@ -551,4 +528,4 @@ body {
   height: 1.1rem;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=insex.css.map */
