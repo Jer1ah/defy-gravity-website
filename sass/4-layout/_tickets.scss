@@ -88,3 +88,28 @@
         }
     }
 }
+
+
+// media queries
+@media(max-width: 1375px) {
+    .tickets {
+        &__list {
+            flex-wrap: wrap;
+            width: 75rem;
+        }
+
+        &__listItem {
+            width: 48.5%;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media(max-width: 725px) {
+    .tickets {
+        &__listItem {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+}

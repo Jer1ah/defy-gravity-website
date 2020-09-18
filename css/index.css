@@ -161,11 +161,16 @@ body {
   font-size: 2.32rem;
   font-weight: 400;
   margin-top: 3rem;
+  max-width: 95%;
+  text-align: center;
+  line-height: 2.55rem;
 }
 .park-health p {
   font-size: 1.15rem;
   font-weight: 300;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  max-width: 85%;
+  text-align: center;
 }
 .park-health__button {
   background-color: black;
@@ -264,6 +269,22 @@ body {
   background-color: #888;
 }
 
+@media (max-width: 1375px) {
+  .tickets__list {
+    flex-wrap: wrap;
+    width: 75rem;
+  }
+  .tickets__listItem {
+    width: 48.5%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 725px) {
+  .tickets__listItem {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
 .activities h2 {
   width: 95rem;
   max-width: 95%;
