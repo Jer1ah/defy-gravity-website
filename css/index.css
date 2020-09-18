@@ -296,7 +296,7 @@ body {
 }
 .activities__list {
   width: 85rem;
-  max-width: 85%;
+  max-width: 80%;
   margin: 3rem auto;
   padding: 0;
   list-style: none;
@@ -312,6 +312,8 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
+  top: 42%;
+  z-index: 101;
 }
 .activities__list .prevButton img, .activities__list .nextButton img {
   width: 1.55rem;
@@ -320,14 +322,12 @@ body {
   cursor: pointer;
 }
 .activities__list .prevButton {
-  top: 12.5rem;
   left: -5rem;
 }
 .activities__list .prevButton img {
   margin-right: 0.15rem;
 }
 .activities__list .nextButton {
-  top: 12.5rem;
   right: -5rem;
 }
 .activities__list .nextButton img {
@@ -357,6 +357,42 @@ body {
   opacity: 0.9;
 }
 
+@media (max-width: 1075px) {
+  .activities__listItem-info {
+    top: 3rem;
+  }
+  .activities__listItem-info h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 925px) {
+  .activities__list {
+    width: 95%;
+    max-width: 95%;
+  }
+  .activities__list .prevButton {
+    left: 1rem;
+  }
+  .activities__list .nextButton {
+    right: 1rem;
+  }
+  .activities__listItem img {
+    width: 100%;
+  }
+  .activities__listItem-info {
+    width: 100%;
+    top: 2rem;
+    left: 1rem;
+  }
+  .activities__listItem-info h3 {
+    color: white;
+  }
+  .activities__listItem-info p {
+    color: white;
+    margin-top: 0.33rem;
+  }
+}
 .parties h2 {
   width: 95rem;
   max-width: 95%;

@@ -11,7 +11,7 @@
 
     &__list {
         width: 85rem;
-        max-width: 85%;
+        max-width: 80%;
         margin: 3rem auto;
         padding: 0;
         list-style: none;
@@ -24,6 +24,8 @@
             border-radius: 50%;
             @include displayFlex(row, center, center);
             position: absolute;
+            top: 42%;
+            z-index: 101;
 
             img {
                 width: 1.55rem;
@@ -35,7 +37,6 @@
         }
 
         .prevButton {
-            top: 12.5rem;
             left: -5rem;
 
             img {
@@ -44,7 +45,6 @@
         }
 
         .nextButton {
-            top: 12.5rem;
             right: -5rem;
 
             img {
@@ -77,6 +77,57 @@
                 margin-top: 1rem;
                 width: 90%;
                 opacity: .90;
+            }
+        }
+    }
+}
+
+
+// media queries
+@media(max-width: 1075px) {
+    .activities__listItem-info {
+        top: 3rem;
+
+        h3 {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+    }
+}
+
+@media(max-width: 925px) {
+    .activities {
+        &__list {
+            width: 95%;
+            max-width: 95%;
+
+            .prevButton {
+                left: 1rem;
+            }
+            
+            .nextButton {
+                right: 1rem;
+            }
+        }
+
+        &__listItem {
+            img {
+                width: 100%;
+            }
+
+            &-info {
+                width: 100%;
+                top: 2rem;
+                left: 1rem;
+
+                h3 {
+                    color: white;
+                }
+
+                p {
+                    color: white;
+                    margin-top: .33rem;
+                }
             }
         }
     }
